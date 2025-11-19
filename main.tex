@@ -1,0 +1,218 @@
+\documentclass[a4paper]{book}
+
+\usepackage[a4paper,
+  lmargin=3cm,
+  rmargin=2cm,
+  textheight=24.5cm,
+]{geometry}
+
+\usepackage{graphicx}
+\usepackage{emptypage}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage[compact]{titlesec}
+\usepackage[skip=1.7\baselineskip]{parskip}
+\usepackage[backend=biber, style=authoryear]{biblatex}
+% \usepackage{times}
+
+\title{Report on HLS Asia Industrial Visit}
+\author{Ved}
+
+\ExplSyntaxOn
+\newcommand{\repeatline}[3]{
+  \int_step_inline:nn {#2} {#1\\[#3]}
+}
+\ExplSyntaxOff
+
+\makeatletter
+\newcommand{\thetitle}{\@title}
+\makeatother
+
+\begin{document}
+
+% Headers and Footers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase{\leftmark\hfill}}
+\fancyhead[RO]{\nouppercase{\hfill\rightmark}}
+\fancyfoot[LE, RO]{\hfill\thepage\hfill}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Font Size
+\fontsize{12pt}{14.4pt}\selectfont
+
+% Colors
+\definecolor{MSDarkBlue}{RGB}{0,32,96}
+
+% Prevent widows and orphans
+\clubpenalty=10000
+\widowpenalty=10000
+
+\frontmatter
+
+\begin{titlepage}
+  \vspace*{\fill}
+  \centering
+  \textcolor{MSDarkBlue}{\textbf{\Huge \thetitle}}
+
+  \Large Bachelor of Technology in Petroleum Engineering
+
+  by
+
+  \begin{tabular}{ll}
+    Ved Prajapati & 23BPE076\\
+    Anirudh Arakeri & 23BPE077\\
+    Shyam Parmar & 23BPE078\\
+    Vansh Pandit & 23BPE079\\
+    P Aishwarya & 23BPE080\\
+    Savan Chauhan & 23BPE082\\
+    Henil Raiyani & 23BPE083\\
+    Katha Patel & 23BPE084\\
+    Pareesee Thakor & 23BPE085\\
+    Meet Patel & 23BPE087\\
+    Harshkumar Rathwa & 23BPE091D\\
+    Divya Patel & 23BPE092D\\
+    Mann Pandya & 23BPE093D\\
+    Mahendra Vadher & 23BPE094D\\
+    Mayur Nakum & 23BPE095D\\
+    Om Patel & 23BPE096D
+  \end{tabular}
+
+  Under the guidance of\\[3pt]
+  \textbf{Dr. [Professor Name]}
+
+  \includegraphics{pdeu_logo.png}
+
+  \textbf{
+    School of Energy Technology,\\[2pt]
+    Pandit Deendayal Energy University,\\[2pt]
+    Gandhinager — 382426, Gujarat, India\\[4pt]
+    July-December 2025
+  }
+  \vspace*{\fill}
+\end{titlepage}
+
+\titleformat{\chapter}{\centering\bfseries\fontsize{14pt}{15pt}\selectfont}{\thechapter}{0.5em}{}{}
+\titlespacing{\chapter}{0pt}{8mm}{8mm}
+\chapter{Declaration}
+We declare that this written submission represents our ideas in our own
+words and where others’ idea or words have been included, we have
+adequately cited and referenced the original sources. We also declare
+that we have adhered to all principles of academic honesty and
+integrity and have not misrepresented or fabricated or falsified any
+idea / data / fact / source in our submission. We understand that any
+violation of the above will be cause for disciplinary action by the
+PANDIT DEENDAYAL ENERGY UNIVERSITY.
+\begin{flushright}
+  \repeatline{Name:\rule{5cm}{0.4pt} Sign:\rule{5cm}{0.4pt}}{16}{1.1em}
+\end{flushright}
+
+\chapter{Approval Sheet}
+This report titled \textbf{``\thetitle"} is recommended for the credits
+of Industrial Orientation.
+\begin{flushright}
+  \begin{tabular}{l}
+    Sign of Examiners:\\[2em]
+    \rule{5cm}{0.4pt}\\[2em]
+    \rule{5cm}{0.4pt}\\[2em]
+    Sign of Supervisor:\\[2em]
+    \rule{5cm}{0.4pt}
+  \end{tabular}
+\end{flushright}
+Date: \rule{5cm}{0.4pt}\\[1em]
+Place: \rule{5cm}{0.4pt}
+
+\tableofcontents
+
+%##############################################
+\mainmatter
+%##############################################
+
+% Chapter and Section Titles
+\titleformat{\chapter}{\centering\bfseries\fontsize{18pt}{20pt}\selectfont}{\thechapter}{1em}{}{}
+\titleformat{\section}{\bfseries\fontsize{16pt}{17pt}\selectfont}{\thesection}{1em}{}{}
+\titleformat{\subsection}{\bfseries\fontsize{14pt}{15pt}\selectfont}{\thesubsection}{1em}{}{}
+\titleformat{\subsubsection}{\bfseries\fontsize{12pt}{14.4pt}\selectfont}{\thesubsubsection}{1em}{}{}
+\titlespacing{\section}{0pt}{12mm}{12mm}
+\titlespacing{\subsection}{0pt}{12mm}{12mm}
+\titlespacing{\subsubsection}{0pt}{10mm}{10mm}
+
+\chapter{Introduction}
+% \thispagestyle{empty}
+\section{Company Profile: HLS Asia}
+
+\section{Gandhinagar Workshop Overview}
+
+\section{Aim and Scope of Visit}
+
+
+\chapter{Industrial Orientataion}
+ z
+\section{Introduction to Well Logging Services}
+ z
+\section{Applications and Significance of Well Logging}
+ z
+\section{Overview of Well Logging Tools}
+ z
+\subsection{Open Hole Tools}
+ z
+\subsubsection{Spectral Density Tool}
+ z
+\subsubsection{Induction Resistivity Tool}
+ z
+\subsubsection{Calliper Tool}
+ z
+\subsubsection{Neutron Porosity Tool}
+ z
+\subsubsection{Spectral Gamma Tool}
+ z
+\subsubsection{Circumference Acoustic Scanning Tool}
+ z
+\subsection{Cased Hole Tools}
+ z
+\subsubsection{Cement Logging Tool}
+ z
+\subsubsection{Perforation Gun}
+ z
+\section{Process of Well Logging}
+ z
+\subsection{Data Acquisition Van (Logging Unit)}
+ z
+\subsection{Data Acquisition and On-site Processing}
+ z
+\section{Tool Storage, Maintanence and Dispatch}
+ z
+\section{Health, Safety and Environmental (HSE) Management}
+ z
+\subsection{General Site Safety}
+ z
+\subsection{Handling of Radioactive(RA) Sources}
+ z
+\subsection{Handling of Explosives(EXPL)}
+ z
+\section{Present Market Status and Future Scope}
+ z
+\section{Competitors and Other Threats}
+The competitive environment for logging and wireline services is largely shaped by the speed of new technology, increasing digitalisation, and the dominance of international oilfield service companies. Academic research suggests that advanced logging tools  which include spectral gamma ray, cement bond logs, and induction/neutron porosity tools are fundamental to subsurface evaluation workflows in the sector.
+
+These tools require a high level of technical capability, on-ongoing technology investments, and specialised skills, making entry for regional service providers such as HLS Asia problematic. Well-logging is a significant reference for reservoir characterisation and formation evaluation (Rider \& Kennedy, The Geological Interpretation of Well Logs, Elsevier).
+
+Research on spectral gamma ray (SGR) logging also emphasizes that leading companies have developed multi-detector gamma ray systems which are capable of more advanced lithology analysis and shale discrimination than traditional single detector systems (Klaja \& Dudek, 2016). These are simply now the standard operating procedure on multi detector gamma ray systems from companies such as Schlumberger, Halliburton, Baker Hughes and Weatherford.
+
+In a similar vein, cement bond logging work stresses the necessity of obtaining high quality CBL/VDL in order to ensure long-term well integrity (Saini et al., 2021). International contractors are continually upgrading their sonic based cement evaluation tools to enhance accuracy, reliability, and operational efficiency that clients will increasingly expect during tender evaluations.
+
+One competitive threat is digital transformation. State of the art machine learning models can automatically execute functions such as synthetic log creation, lithofacies forecasting, and porosity prediction with high accuracy (Zhang et al., 2025). International service companies investing in modern day AI platforms have a clear competitive advantage compared to moderately sized companies without similar digital assets.
+
+The research literature has also documented operational risks in wireline logging, such as tool failure, borehole washout, cement channeling, and depth mismatches. Bigger companies cope with these risks better because of experience, staff expertise, and redundancy in equipment. These situations, along with digitalisation and expectations from customers, are the most serious risks to HLS Asia in a competitive scenario.
+
+
+\chapter{Learnings from Industrial Visit}
+ z
+\section{Key Learnings}
+ z
+\section{Connections to Classroom Learning}
+ z
+\chapter{References}
+
+\end{document}
