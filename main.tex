@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage{lipsum}
 \usepackage{xcolor}
+\usepackage{enumitem}
 \usepackage[compact]{titlesec}
 \usepackage[skip=1.7\baselineskip]{parskip}
 % \usepackage[backend=biber, style=authoryear]{biblatex}
@@ -66,7 +67,7 @@
     Anirudh Arakeri & 23BPE077\\
     Shyam Parmar & 23BPE078\\
     Vansh Pandit & 23BPE079\\
-    P Aishwarya & 23BPE080\\
+    P Aishwarya Subrahmanyam & 23BPE080\\
     Savan Chauhan & 23BPE082\\
     Henil Raiyani & 23BPE083\\
     Katha Patel & 23BPE084\\
@@ -103,7 +104,8 @@ adequately cited and referenced the original sources. We also declare
 that we have adhered to all principles of academic honesty and
 integrity and have not misrepresented or fabricated or falsified any
 idea / data / fact / source in our submission. We understand that any
-violation of the above will be cause for disciplinary action by PANDIT DEENDAYAL ENERGY UNIVERSITY.
+violation of the above will be cause for disciplinary action by
+PANDIT DEENDAYAL ENERGY UNIVERSITY.
 \begin{flushright}
   \repeatline{Name:\rule{5cm}{0.4pt} Sign:\rule{5cm}{0.4pt}}{16}{1.1em}
 \end{flushright}
@@ -134,130 +136,16 @@ Place: \rule{5cm}{0.4pt}
 \titleformat{\section}{\bfseries\fontsize{16pt}{17pt}\selectfont}{\thesection}{1em}{}{}
 \titleformat{\subsection}{\bfseries\fontsize{14pt}{15pt}\selectfont}{\thesubsection}{1em}{}{}
 \titleformat{\subsubsection}{\bfseries\fontsize{12pt}{14.4pt}\selectfont}{\thesubsubsection}{1em}{}{}
-\titlespacing{\section}{0pt}{12mm}{12mm}
-\titlespacing{\subsection}{0pt}{12mm}{12mm}
-\titlespacing{\subsubsection}{0pt}{10mm}{10mm}
+\titlespacing{\section}{0pt}{12mm}{8mm}
+\titlespacing{\subsection}{0pt}{12mm}{8mm}
+\titlespacing{\subsubsection}{0pt}{10mm}{8mm}
 
-\chapter{Introduction}
-% \thispagestyle{empty}
-\section{Company Profile: HLS Asia}
+\input{introduction}
 
-\section{Gandhinagar Workshop Overview}
+\input{report}
 
-\section{Aim and Scope of Visit}
+\input{learning}
 
-\chapter{Industrial Orientataion}
-z
-\section{Introduction to Well Logging Services}
-z
-\section{Applications and Significance of Well Logging}
-z
-\section{Overview of Well Logging Tools}
-z
-\subsection{Open Hole Tools}
-z
-\subsubsection{Spectral Density Tool}
-z
-\subsubsection{Induction Resistivity Tool}
-z
-\subsubsection{Calliper Tool}
-z
-\subsubsection{Neutron Porosity Tool}
-z
-\subsubsection{Spectral Gamma Tool}
-z
-\subsubsection{Circumference Acoustic Scanning Tool}
-z
-\subsection{Cased Hole Tools}
-z
-\subsubsection{Cement Logging Tool}
-z
-\subsubsection{Perforation Gun}
-z
-\section{Process of Well Logging}
-z
-\subsection{Data Acquisition Van (Logging Unit)}
-z
-\subsection{Data Acquisition and On-site Processing}
-z
-\section{Tool Storage, Maintenance and Dispatch}
-\subsection{Asset Management and Storage Infrastructure}
-The Gandhinagar facility utilizes a segregated infrastructure model designed to preserve asset integrity and adhere to strict statutory inventory controls. The workshop is divided into distinct operational zones, separating non-hazardous wireline assets—specifically open-hole and cased-hole logging sondes—from hazardous materials. To mitigate the risks of galvanic corrosion and electronic degradation common in humid environments, all electronic cartridges, telemetry subs, and acoustic devices are housed in climate-controlled, humidity-regulated storage units. Hazardous materials are managed with heightened security protocols compliant with Indian national standards; radioactive sources used for density and neutron logging are secured in subterranean, lead-shielded bunkers approved by the Atomic Energy Regulatory Board (AERB), while explosive materials, including perforating charges, are stored in earth-mounded magazines licensed by the Petroleum and Explosives Safety Organization (PESO). All inventory movement is tracked via the HLS digital asset management system, ensuring real-time visibility of tool location, life-cycle history, and utilization statistics.
-
-\subsection{Maintenance Lifecycle and Calibration}
-To ensure “First Run Success” and minimize non-productive time (NPT), the facility executes a rigorous maintenance regimen immediately following every field deployment. The lifecycle begins with thorough decontamination and pressure washing to remove formation fluids and drilling mud, followed by a detailed mechanical inspection of pressure housings, threads, and connectors to identify erosion or physical trauma. Technicians systematically replace all elastomeric sealing elements (O-rings) and backup rings to guarantee pressure isolation up to the tool’s rated maximum. Concurrently, electronic diagnostics are performed using the HLS Test Bench to simulate downhole power loads and telemetry speeds, verifying the health of printed circuit boards and sensors. Critical formation evaluation sensors—specifically Gamma Ray, Neutron, and Density tools—undergo Master Calibration using traceable reference standards to correct for detector drift, while induction tools are verified against known resistivity markers. Prior to returning to the ready rack, pressure-critical assets undergo hydrostatic validation in a Pressure Test Vessel (PTV) to certify seal integrity.
-
-\subsection{Dispatch Operations and Pre-Deployment Verification}
-The dispatch phase consolidates technical preparation with logistics coordination to ensure operational readiness at the wellsite. This process begins with the assembly of the toolstring according to the specific client well program, followed by a System Integration Test (SIT). During the SIT, the assembled string is powered via a surface logging unit to verify inter-tool communication, telemetry synchronization, and software compatibility. Once validated, equipment is packed into shock-resistant transportation baskets designed to prevent vibration damage during transit. The logistics team coordinates the movement of these assets, paying strict attention to regulatory documentation. This includes the preparation of comprehensive manifest dossiers containing calibration certificates, inventory lists, and—for hazardous cargo—the requisite regulatory transport permits and TREMCARDS (Transport Emergency Cards) as mandated by the Motor Vehicles Act and AERB guidelines for the transport of Dangerous Goods (Class 7 and Class 1).
-
-\section{Health, Safety and Environmental (HSE) Management}
-\subsection{General Site Safety}
-General site safety protocols at the HLS Asia Gandhinagar Workshop form the foundation of all operational activities, especially because the facility handles high-value logging tools, heavy mechanical equipment, radioactive materials, and explosives. Personnel are required to wear complete personal protective equipment (PPE), including helmets, flame-resistant coveralls, safety shoes, high-visibility vests, goggles, and gloves before entering work areas. The workshop is divided into controlled access zones—Green, Yellow, and Red—each restricting entry based on operational risk, with the Red Zone reserved for hazardous materials and accessible only to authorized staff. Before the start of daily operations, safety induction sessions and toolbox talks are conducted to brief workers about ongoing activities, potential hazards, emergency communication, and preventive measures.
-
-All equipment handling is restricted to certified technicians who inspect hoisting and lifting tools before use. Fire safety measures are robust, with strategically placed fire extinguishers, functional alarms, and clearly marked evacuation routes. The workshop maintains high housekeeping standards by ensuring clean, hazard-free workstations, proper tool arrangement, and systematic waste segregation. Throughout all operations, documentation and compliance with HLS and OISD safety regulations are strictly maintained through logbooks, audits, and scheduled inspections. This strong HSE culture ensures safe operations and minimizes risks during all workshop activities.
-
-\subsection{Handling of Radioactive(RA) Sources}
-Radioactive sources used in well logging tools are handled under strict regulatory control following AERB guidelines. These sources are stored inside shielded lead containers placed within a dedicated RA bunker equipped with radiation signage, surveillance, and monitoring systems. Access to this area is highly restricted and permitted only to trained personnel holding valid AERB certifications. All handling of radioactive capsules, including loading and unloading into logging tools, is performed within controlled zones using specialized tools to minimize exposure. Radiation levels are continuously monitored using survey meters, area monitors, and personal dosimeters, and exposure records are updated monthly. Transportation of radioactive sources follows regulated procedures, using certified lead casks with tamper-proof seals, along with transport permits and chain-of-custody documentation.
-
-In case of any radiation abnormality or suspected source breach, emergency protocols require immediate evacuation, activation of alarms, restricted entry, and assessment by the Radiation Safety Officer (RSO). Spent or expired radioactive sources are not stored locally; instead, they are returned to manufacturers or other AERB-approved disposal facilities. These strict measures ensure safe, compliant, and efficient handling of all radioactive materials in well logging operations.
-
-\subsection{Handling of Explosives(EXPL)}
-z
-\section{Present Market Status and Future Scope}
-z
-\section{Competitors and Other Threats}
-The competitive environment for logging and wireline services is
-largely shaped by the speed of new technology, increasing
-digitalisation, and the dominance of international oilfield service
-companies. Academic research suggests that advanced logging tools
-which include spectral gamma ray, cement bond logs, and
-induction/neutron porosity tools are fundamental to subsurface
-evaluation workflows in the sector.
-
-These tools require a high level of technical capability, on-ongoing
-technology investments, and specialised skills, making entry for
-regional service providers such as HLS Asia problematic. Well-logging
-is a significant reference for reservoir characterisation and
-formation evaluation (Rider \& Kennedy, The Geological Interpretation
-of Well Logs, Elsevier).
-
-Research on spectral gamma ray (SGR) logging also emphasizes that
-leading companies have developed multi-detector gamma ray systems
-which are capable of more advanced lithology analysis and shale
-discrimination than traditional single detector systems (Klaja \&
-Dudek, 2016). These are simply now the standard operating procedure
-on multi detector gamma ray systems from companies such as
-Schlumberger, Halliburton, Baker Hughes and Weatherford.
-
-In a similar vein, cement bond logging work stresses the necessity of
-obtaining high quality CBL/VDL in order to ensure long-term well
-integrity (Saini et al., 2021). International contractors are
-continually upgrading their sonic based cement evaluation tools to
-enhance accuracy, reliability, and operational efficiency that
-clients will increasingly expect during tender evaluations.
-
-One competitive threat is digital transformation. State of the art
-machine learning models can automatically execute functions such as
-synthetic log creation, lithofacies forecasting, and porosity
-prediction with high accuracy (Zhang et al., 2025). International
-service companies investing in modern day AI platforms have a clear
-competitive advantage compared to moderately sized companies without
-similar digital assets.
-
-The research literature has also documented operational risks in
-wireline logging, such as tool failure, borehole washout, cement
-channeling, and depth mismatches. Bigger companies cope with these
-risks better because of experience, staff expertise, and redundancy
-in equipment. These situations, along with digitalisation and
-expectations from customers, are the most serious risks to HLS Asia
-in a competitive scenario.
-
-\chapter{Learnings from Industrial Visit}
-z
-\section{Key Learnings}
-z
-\section{Connections to Classroom Learning}
-z
 \chapter{References}
 % \nocite{*}
 % \printbibliography[heading=none]
