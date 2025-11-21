@@ -7,13 +7,14 @@
 ]{geometry}
 
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{emptypage}
 \usepackage{fancyhdr}
 \usepackage{lipsum}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage[compact]{titlesec}
-\usepackage[skip=1.7\baselineskip]{parskip}
+\usepackage[skip=1.5\baselineskip]{parskip}
 % \usepackage[backend=biber, style=authoryear]{biblatex}
 % \addbibresource{references.bib}
 % \usepackage{times}
@@ -36,8 +37,8 @@
 % Headers and Footers
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE]{\nouppercase{\leftmark\hfill}}
-\fancyhead[RO]{\nouppercase{\hfill\rightmark}}
+\fancyhead[LE]{\nouppercase{\leftmark\hfill\rightmark}}
+\fancyhead[RO]{\nouppercase{\leftmark\hfill\rightmark}}
 \fancyfoot[LE, RO]{\hfill\thepage\hfill}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -132,10 +133,11 @@ Place: \rule{5cm}{0.4pt}
 %##############################################
 
 % Chapter and Section Titles
-\titleformat{\chapter}{\centering\bfseries\fontsize{18pt}{20pt}\selectfont}{\thechapter}{1em}{}{}
+\titleformat{\chapter}[frame]{\bfseries\fontsize{18pt}{20pt}\selectfont}{\thechapter}{1em}{}{}
 \titleformat{\section}{\bfseries\fontsize{16pt}{17pt}\selectfont}{\thesection}{1em}{}{}
 \titleformat{\subsection}{\bfseries\fontsize{14pt}{15pt}\selectfont}{\thesubsection}{1em}{}{}
 \titleformat{\subsubsection}{\bfseries\fontsize{12pt}{14.4pt}\selectfont}{\thesubsubsection}{1em}{}{}
+\titleformat{\paragraph}[runin]{\bfseries\fontsize{12pt}{14.4pt}\selectfont}{\theparagraph}{0em}{}
 \titlespacing{\section}{0pt}{12mm}{8mm}
 \titlespacing{\subsection}{0pt}{12mm}{8mm}
 \titlespacing{\subsubsection}{0pt}{10mm}{8mm}

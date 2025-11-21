@@ -4,25 +4,207 @@
 \section{Overview of Well Logging Tools}
 
 \subsection{Open Hole Tools}
-z
-\subsubsection{Spectral Density Tool}
-z
+Open hole tools are the logging tools used just after the drilling has completed, before the casing is set. They typically measure and log the formation properties.
+\subsubsection{Spectral Gamma Tool}
+\paragraph{Introduction:}
+The Spectral Gamma Ray Tool (SGR) is a wireline logging tool designed to measure the natural gamma radiation spectrum emitted by subsurface formations. Unlike the conventional total gamma ray log, the SGR can discriminate individual radioactive elements by separating the gamma ray signal into different energy windows.
+
+Formations naturally emit gamma rays from three primary isotopes:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+	\item Potassium-40 ($^{40}\mathrm{K}$)
+	\item Uranium Series ($^{238}\mathrm{U}\rightarrow^{214}\mathrm{Bi}$)
+	\item Thorium Series ($^{232}\mathrm{Th}\rightarrow^{208}\mathrm{Tl}$)
+\end{itemize}
+
+Each isotope emits gamma rays with distinct photon energies. The SGR tool uses a scintillation detector (typically NaI(Tl) crystal) to measure and separate these energies.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=30em]{images/spectral_gamma_tool.jpg}
+	\caption{Spectral Gamma Ray Tool}
+\end{figure}
+
+\paragraph{Outputs:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Total Gamma Ray (API units): Summation of all energy windows.
+\item Elemental Concentrations:
+	\subitem Potassium (%)
+	\subitem Thorium (ppm)
+	\subitem Uranium (ppm)
+
+\item Derived Ratios (Used in shale typing \& geological correlation):
+	\subitem Th/K ratio – clay mineralogy indicator
+	\subitem U/Th ratio – identifies organic-rich shale \& reducing environments
+\end{itemize}
+
+\paragraph{Geological Interpretation:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Shale Identification:
+\subitem High Th → kaolinite / illite shale
+\subitem High K → potassium-rich feldspar or illitic shale
+\subitem High U → organic-rich shale (TOC potential)
+
+\item Clay Mineralogy:
+\subitem \begin{tabular}{|l|l|}
+\hline
+	\textbf{Mineral} & \textbf{Indicator}\\ \hline
+	Illite & High K\\ \hline
+	Kaolinite & High Th\\ \hline
+	Smectite & Lower Th/K\\ \hline
+\end{tabular}
+\end{itemize}
+
+{\parskip=0pt
+\paragraph{Applications:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Sequence stratigraphy (maximum flooding surfaces identified by uranium peaks)
+\item Shale volume calculation (Vsh)
+\item Distinguishing radioactive sands vs. clean sands
+\item Identifying non-clay radioactive minerals (zircon, monazite)
+\item Depositional environment interpretation
+\item Heavy mineral mapping
+\end{itemize}
+}
+
 \subsubsection{Induction Resistivity Tool}
 z
-\subsubsection{Calliper Tool}
-z
+\subsubsection{Caliper Tool}
+\paragraph{Description:} The Caliper Log tool, also known as a caliper sonde, is a mechanical device used to measure the diameter and shape of the borehole along its depth. It consists of a body with two, three, four, or more extendable arms. Modern tools, often called multi-arm or dual-caliper (e.g., four-arm), can measure the diameter in two perpendicular directions (X and Y) to detect ovality.
+The arms are typically spring-loaded or hydraulically powered to push against the borehole wall. The movement of these arms is linked to a sensor, often a potentiometer, which translates the mechanical displacement into a varying electrical signal proportional to the hole diameter. The tool is run on a wireline and can have an open-arm measurement range that varies, but a 4-arm tool might open up to 30 inches or more.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=30em]{images/caliper.png}
+	\caption{Caliper Tool}
+\end{figure}
+\paragraph{Working Principle:} The principle is purely mechanical: as the logging tool is pulled out of the borehole, the spring-loaded arms extend until they press against the borehole wall. Changes in the borehole diameter cause the arms to move in or out. This physical movement is continuously converted by the potentiometer into a changing electrical resistance, which is then digitized and recorded as a continuous measurement of the borehole diameter versus depth. For oval holes, two opposite pairs of arms (in a 4-arm tool) measure the maximum and minimum diameters.
+\paragraph{Application and Interpretation:} The primary purpose of the caliper log is to measure the borehole diameter and  roughness of the wall. It is essential for:
+\begin{itemize}
+\item \textbf{Volumetric Calculations:} Determining the openhole volume for accurate cementing operations, ensuring casing can be properly secured.
+\item \textbf{Environmental Corrections:} Providing the hole size needed to apply necessary corrections to other logs (like Density and Neutron logs), as their readings are often affected by the distance to the formation and the volume of borehole fluid (mud).
+\item \textbf{Hole Condition Assessment:} Identifying zones of washout (enlargements caused by unstable formation or drilling fluid erosion), caving (breakdown of the rock), and key seats (wear on the wall in deviated wells).
+\item \textbf{Lithology Inference:} Hard, competent formations (like limestones or sandstones) usually show a diameter close to the drill bit size, resulting in a smooth log. Soft, unstable formations (like shales) often exhibit significant enlargements or rugosity. The presence of a mud cake (a layer of solids deposited on the wall of permeable zones) suggests a permeable formation, causing the measured diameter to be smaller than the bit size.
+\end{itemize}
+
 \subsubsection{Neutron Porosity Tool}
-z
-\subsubsection{Spectral Gamma Tool}
-z
-\subsubsection{Circumference Acoustic Scanning Tool}
-z
+\paragraph{Description:} The Neutron Log tool is a nuclear logging device used to measure the formation's hydrogen concentration, which is directly related to its porosity. The tool contains a source of high-energy (fast) neutrons, typically a chemical source like Americium-Beryllium (Am-Be). It also includes one or two detectors positioned above the source. Common tool types are the Compensated Neutron Log (CNL), which uses two detectors (a near detector and a far detector) to correct for borehole effects, and older tools like the Sidewall Neutron Porosity (SNP) log. The detector measures the flux of slowed-down neutrons (epithermal or thermal) or the resulting capture gamma rays in units like counts per second (CPS), which is then scaled and presented in porosity units (e.g., Limestone Porosity Units).
+\paragraph{Working Principle:} The tool's working principle is based on the interaction of neutrons with the atomic nuclei in the formation. The  Am-Be source continuously emits fast neutrons into the surrounding rock. These fast neutrons collide with the nuclei of the formation atoms, a process called elastic scattering, losing energy with each collision. The most effective element for slowing down neutrons is Hydrogen ($^1\text{H}$), because its atomic mass is nearly equal to that of a neutron, leading to the maximum energy loss per collision. Neutrons slow down in stages:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Fast Neutrons (high energy)
+\item Epithermal Neutrons (intermediate energy, detected by some tools)
+\item Thermal Neutrons (low energy, eventually captured, detected by most modern CNL tools via the resulting capture gamma rays).
+\end{itemize}
+The number of neutrons that successfully slow down and reach the detector is inversely proportional to the amount of hydrogen in the formation. Since most hydrogen in a rock is concentrated in the pore fluids (water and hydrocarbons), the measurement is primarily an indicator of the Hydrogen Index, which in clean, liquid-filled formations is directly proportional to the total porosity ($\phi$).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=20em]{images/neutron_tool.png}
+	\caption{Schematic of Netron Porosity Tool}
+\end{figure}
+\paragraph{Application and Interpretation:} The primary purpose of the Neutron Log is to determine the formation porosity and fluid type. Key applications and interpretations include:
+\begin{itemize}
+\item \textbf{Porosity Determination:} It is a primary porosity tool, often used in conjunction with the Density log ($\rho_b$) to get a more accurate porosity value and to help determine lithology.
+\item \textbf{Gas Identification (Gas Effect):} Gas contains significantly less hydrogen per unit volume than oil or water. In gas-bearing zones, the Neutron log records a low apparent porosity (low hydrogen content). When plotted with the Density log, the curves show a characteristic "cross-over" pattern, which is a strong indicator of gas.
+\item \textbf{Shale Identification (Shale Effect):} Clays in shales contain chemically bound water, which is a source of hydrogen. This causes the Neutron log to read an overestimated, high apparent porosity in shales.
+\item \textbf{Lithology Identification:} A cross-plot of Neutron porosity versus Density is a standard method for determining the formation's lithology (e.g., distinguishing sandstone, limestone, and dolomite).
+\end{itemize}
+
+\subsubsection{Spectral Density Tool}
+\paragraph{Purpose:} The Spectral Density Log (SDL™) tool is designed to deliver precise and high-quality measurements of bulk density (ρb) and borehole-compensated photoelectric factor (Pe), both of which are essential for accurate determination of formation porosity and lithology. The tool is built to operate reliably even in hostile downhole environments, providing stable, high-resolution density data that improves reservoir characterization.
+
+The tool also reduces borehole sensitivity and enhances the accuracy of Pe, making it especially useful for evaluating thinly bedded formations when processed with the advanced Omega dynamic processing system.
+
+\paragraph{Technical Specifications:} The SDL tool uses a Cesium-137 gamma-ray source, tungsten shielding, and two high-efficiency scintillation detectors, all housed in a rugged pad design. This combination generates high gamma-ray count rates with minimal statistical variation. The tool incorporates advanced gain stabilization to maintain measurement integrity as temperature changes, and its pad geometry and articulation ensure consistent contact with the borehole wall.
+\paragraph{Applications:}
+\begin{itemize}
+	
+\end{itemize}
+
+
+\subsubsection{Circumferential Acoustic Scanning Tool (CAST)}
+\paragraph{Introduction:}The Circumferential Acoustic Scanning Tool (CAST) is a high-resolution ultrasonic borehole imaging tool that provides a 360° acoustic scan of the borehole wall. It is used for borehole geometry, fracture detection, casing inspection, and cement evaluation.
+\paragraph{Principle:}The CAST tool operates using a pulsed ultrasonic transducer that emits high-frequency acoustic waves (200–500 kHz). These waves travel through the borehole fluid and reflect back from the borehole wall. Each reflection provides:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Amplitude – indicates the reflectivity of the formation or casing
+\item Travel time (Δt) – used to calculate borehole radius
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=30em]{images/cast.jpg}
+	\caption{Circumferential Acoustic Scannig Tools (CAST)}
+\end{figure}
+
+\paragraph{Tool Construction:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Transducer Assembly:} Contains one or more piezoelectric transducers. Operates in pulse-echo mode. Either mechanically rotates (older tools) or electronically scans (modern tools)
+\item \textbf{Caliper Mechanism:} Travel time difference provides micro-caliper measurements accurate to ±0.1 mm.
+\item \textbf{Telemetry System:} High-speed digital transmission to surface for real-time imaging.
+\end{itemize}
+
+\paragraph{Log Outputs:} The CAST provides the following high-resolution logs:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Acoustic Amplitude Image:
+\subitem Low amplitude → fractures, washouts, vugs, mudcake, soft formations
+\subitem High amplitude → competent, hard formations
+\item Travel-Time (Radius) Image: Used to derive true borehole shape. Detects ellipticity, breakouts, and washouts
+\item 3D Borehole Reconstruction: Advanced processing gives unwrapped 360° borehole map, dip and azimuth of fractures, and structural orientation analysis.
+\end{itemize}
+
+\paragraph{Applications:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Structural geology mapping
+\item Fracture swarm identification
+\item Stress field and breakout analysis
+\item Casing inspection logs
+\item Cement evaluation in cased wells
+\item Borehole rugosity and caliper analysis
+\item Reservoir geomechanics
+\item Core-to-log correlation
+\end{itemize}
+
 \subsection{Cased Hole Tools}
-z
-\subsubsection{Cement Logging Tool}
-z
-\subsubsection{Perforation Gun}
-z
+After the casing is set and cemented, operations shift to well completion. Cased-hole tools are then used to verify cement integrity and create controlled pathways for hydrocarbons to enter the wellbore.
+\subsubsection{Variable Density Log}
+The primary purpose of cementing the casing is to isolate zones, support the casing and prevent surface blowouts. Cement logging tools are used to verify the quality and placement of this cement behind the casing.
+\paragraph{Objective:} To provide a qualitative, visual representation of the cement bond by displaying the full acoustic waveform. Its main goal is to verify zonal isolation by showing the acoustic response of the formation behind the casing.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=25em]{images/vdl.png}
+	\caption{VDL and CBL tool}
+\end{figure}
+
+\paragraph{Working Principle:} The VDL is an acoustic imaging tool that captures the full acoustic waveform rather than just amplitude. Using the same transmitter-receiver setup as the CBL, it converts the complete wave train into a visual log with varying shades indicating signal intensity. This allows clear identification of different acoustic arrivals, such as casing and formation waves.
+\paragraph{Interpretation:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Strong vertical lines indicate poor bond (casing arrival dominant).
+\item Strong wavy lines indicate good bond (formation arrival dominant).
+\end{itemize}
+
+\subsubsection{Perforating Gun}
+\paragraph{Objective:} The primary objective of a perforating gun is to create a hydraulic communication path between the wellbore and the hydrocarbon-bearing reservoir. It does this by punching holes through the steel casing, the cement sheath surrounding it, and several inches into the formation rock.
+\paragraph{Working Principle:} They operate using shaped explosive charges arranged inside a carrier. When detonated, each charge creates a high-velocity jet that penetrates the casing and forms perforation tunnels in the formation. The energy of the jet removes material along its path, creating clean, deep channels that connect the reservoir to the wellbore for efficient production.
+\paragraph{Components:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Housing:} The steel body that holds the charges. It can be a hollow steel carrier or a strip/retrievable type.
+\item \textbf{Shaped Charges:} The individual explosive units that create the penetration jets.
+\item \textbf{Detonator:} The device that initiates the explosive sequence.
+\item \textbf{Detonation Cord:} A cord that runs through the gun, transferring the detonation from one charge to the next.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=25em]{images/perf_gun.jpg}
+	\caption{Perforating Gun}
+\end{figure}
+
+\paragraph{Types of Perforation Guns:}
+\begin{itemize}
+	\item \textbf{Wireline-Conveyed:} Lowered on a cable for accurate depth control. Mostly used in vertical wells.
+	\item \textbf{Tubing-Conveyed:} Run as part of the production string, used for long or horizontal wells/high pressure wells.
+\end{itemize}
+
 \section{Process of Well Logging}
 
 \subsection{Data Acquisition Van (Logging Unit)}
@@ -60,7 +242,48 @@ Radioactive sources used in well logging tools are handled under strict regulato
 In case of any radiation abnormality or suspected source breach, emergency protocols require immediate evacuation, activation of alarms, restricted entry, and assessment by the Radiation Safety Officer (RSO). Spent or expired radioactive sources are not stored locally; instead, they are returned to manufacturers or other AERB-approved disposal facilities. These strict measures ensure safe, compliant, and efficient handling of all radioactive materials in well logging operations.
 
 \subsection{Handling of Explosives(EXPL)}
-z
+EXPL refers to chemical compounds capable of rapidly transforming under specific stimuli to release large amounts of heat and gas. This reaction may result in a sharp blow, spark, or full detonation, producing significant explosive energy.
+\paragraph{Classification of EXPL:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Low Explosives:} Substances that burn rapidly through deflagration but do not detonate.
+\item \textbf{High Explosives:} Compounds that detonate at high speeds and generate powerful shock waves.
+\item \textbf{Pyrotechnics:} Materials used for illumination, signaling, and special effects.
+\end{itemize}
+\paragraph{Sensitivity Factors:} EXPL is highly sensitive to external conditions; improper handling can lead to unintended initiation. Key sensitivity factors include:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+	\item \textbf{Electricity:} Static or stray electrical currents can unintentionally initiate electric detonators or assemblies.
+\item \textbf{Shock and Impact:} Dropping, striking, or mechanically stressing EXPL—especially primary explosives—may cause detonation.
+\item \textbf{Heat:} Elevated temperatures accelerate decomposition, increasing the likelihood of accidental ignition.
+\end{itemize}
+\paragraph{Controls and Safety Measures:}
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Heat Control
+	\subitem Store EXPL in cool, shaded areas away from direct sunlight.
+	\subitem Outdoor storage of EXPL is strictly prohibited.
+\item Impact Control
+\subitem Handle all EXPL items, particularly detonators, with extreme caution.
+\subitem Prevent any dropping, vibration, or mechanical shock during handling or transport.
+\item Electric Current Control
+\subitem Avoid the use of electrically powered tools near EXPL assemblies.
+\subitem Utilize standardized control panels and meters.
+\subitem Ensure proper grounding at all times.
+\item Friction and Spark Control
+\subitem Only non-sparking, non-ferrous tools should be used.
+\subitem Storage and transport units must be lined with spark-free materials.
+\item Static Electricity Control
+\subitem Suspend EXPL operations during thunderstorms, sandstorms, or snowfall.
+\subitem Avoid helicopter movements near armed systems due to static generation.
+\subitem Use appropriate grounding and personal protective equipment to prevent static buildup.
+\item Physical Barricading
+\subitem Install suitable barricades around EXPL storage, handling, and operational zones to restrict unauthorized access.
+\end{itemize}
+\paragraph{Operational Guidelines:} For field operations involving EXPL, the following procedural rules must be enforced:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item The term \textit{explosive} must be replaced with \*EXPL\* in all communications and records.
+\item EXPL-related tasks should only be performed between sunrise and sunset to reduce risks associated with poor visibility.
+\end{itemize}
+
+
 \section{Present Market Status and Future Scope}
 The global market for wireline services is experiencing consistent growth, with Fortune Business Insights projecting a compound annual growth rate of about 5.18\% from 2025 to 2032. Additional estimates from WiseGuy suggest that the wireline logging segment alone may expand from USD 14.1 billion in 2025 to roughly USD 20.8 billion by 2035. Growth is particularly strong in the Asia-Pacific region, with countries such as India emerging as major contributors. Zion Market Research similarly forecasts that the global wireline logging services market could reach approximately USD 15.42 billion by 2034, further reinforcing the sector’s upward trajectory.
 
