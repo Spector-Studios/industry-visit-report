@@ -66,8 +66,19 @@ Each isotope emits gamma rays with distinct photon energies. The SGR tool uses a
 \end{itemize}
 }
 
-\subsubsection{Induction Resistivity Tool}
-z
+\subsubsection{High-Resolution Induction Tool}
+\paragraph{Purpose:} The High-Resolution Induction Tool is designed to measure the apparent conductivity of subsurface formations, which is later converted to resistivity through data processing. Its primary purpose is to deliver accurate formation resistivity ($R_t$) across a very wide resistivity range (0.2–2000 ohm-m), enabling improved evaluation of water saturation, identification of hydrocarbon-bearing zones, and assessment of invasion profiles such as $R_{xo}$ and invasion diameter.
+The tool also provides digitally focused resistivity (DFL) in conductive muds, allowing shallow radial investigation and enhancing interpretation in thinly laminated reservoirs.
+\paragraph{Technical Specifications:} The HRI tool belongs to the induction logging family and operates using an electromagnetic induction principle. It contains four transmitters and one receiver, with the transmitters operating at 20 kHz. The receiver is built with a three-coil configuration, which provides enhanced vertical resolution.
+The tool records both real (R) and quadrature (X) components of conductivity; the X component is used for skin-effect corrections. The processing chain applies corrections for shoulder-bed effects, skin effects, and borehole influence, resulting in high-quality deep (HDRS) and medium (HMRS) resistivity logs. A digitally focused resistivity (DFL) measurement is also available, offering a 15-inch radial investigation and matching vertical resolution with the main induction curves. The tool achieves a 1-ft vertical resolution, improving thin-bed evaluation.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=15em]{images/induction_tool.png}
+	\caption{Induction Tool}
+\end{figure}
+\paragraph{Applications:} The HRI tool is used to obtain reliable formation resistivity in wells drilled with water, air, or oil. Because it covers a broad resistivity range, it helps differentiate conductive water-bearing formations from hydrocarbon-bearing zones. Its high-resolution deep and medium induction curves, as well as the DFL measurement, are particularly effective in analyzing finely laminated reservoirs, estimating moveable hydrocarbon volumes, and quantifying radial fluid distributions around the borehole.
+The tool supports evaluation of invasion characteristics, including determining Rxo and invasion diameter. Overall, it provides crucial input for calculating water saturation (Sw) and improving estimates of hydrocarbon reserves, especially in complex, thinly bedded formations.
+
 \subsubsection{Caliper Tool}
 \paragraph{Description:} The Caliper Log tool, also known as a caliper sonde, is a mechanical device used to measure the diameter and shape of the borehole along its depth. It consists of a body with two, three, four, or more extendable arms. Modern tools, often called multi-arm or dual-caliper (e.g., four-arm), can measure the diameter in two perpendicular directions (X and Y) to detect ovality.
 The arms are typically spring-loaded or hydraulically powered to push against the borehole wall. The movement of these arms is linked to a sensor, often a potentiometer, which translates the mechanical displacement into a varying electrical signal proportional to the hole diameter. The tool is run on a wireline and can have an open-arm measurement range that varies, but a 4-arm tool might open up to 30 inches or more.
@@ -103,21 +114,31 @@ The number of neutrons that successfully slow down and reach the detector is inv
 \end{figure}
 \paragraph{Application and Interpretation:} The primary purpose of the Neutron Log is to determine the formation porosity and fluid type. Key applications and interpretations include:
 \begin{itemize}
-\item \textbf{Porosity Determination:} It is a primary porosity tool, often used in conjunction with the Density log ($\rho_b$) to get a more accurate porosity value and to help determine lithology.
+\item \textbf{Porosity Determination:} It is a primary porosity tool, often used in conjunction with the Density log ($\mathrm{\rho}_{b}$) to get a more accurate porosity value and to help determine lithology.
 \item \textbf{Gas Identification (Gas Effect):} Gas contains significantly less hydrogen per unit volume than oil or water. In gas-bearing zones, the Neutron log records a low apparent porosity (low hydrogen content). When plotted with the Density log, the curves show a characteristic "cross-over" pattern, which is a strong indicator of gas.
 \item \textbf{Shale Identification (Shale Effect):} Clays in shales contain chemically bound water, which is a source of hydrogen. This causes the Neutron log to read an overestimated, high apparent porosity in shales.
 \item \textbf{Lithology Identification:} A cross-plot of Neutron porosity versus Density is a standard method for determining the formation's lithology (e.g., distinguishing sandstone, limestone, and dolomite).
 \end{itemize}
 
 \subsubsection{Spectral Density Tool}
-\paragraph{Purpose:} The Spectral Density Log (SDL™) tool is designed to deliver precise and high-quality measurements of bulk density (ρb) and borehole-compensated photoelectric factor (Pe), both of which are essential for accurate determination of formation porosity and lithology. The tool is built to operate reliably even in hostile downhole environments, providing stable, high-resolution density data that improves reservoir characterization.
+\paragraph{Purpose:} The Spectral Density Log (SDL) tool is designed to deliver precise and high-quality measurements of bulk density ($\mathrm{\rho}_b$) and borehole-compensated photoelectric factor (Pe), both of which are essential for accurate determination of formation porosity and lithology. The tool is built to operate reliably even in hostile downhole environments, providing stable, high-resolution density data that improves reservoir characterization.
 
 The tool also reduces borehole sensitivity and enhances the accuracy of Pe, making it especially useful for evaluating thinly bedded formations when processed with the advanced Omega dynamic processing system.
 
 \paragraph{Technical Specifications:} The SDL tool uses a Cesium-137 gamma-ray source, tungsten shielding, and two high-efficiency scintillation detectors, all housed in a rugged pad design. This combination generates high gamma-ray count rates with minimal statistical variation. The tool incorporates advanced gain stabilization to maintain measurement integrity as temperature changes, and its pad geometry and articulation ensure consistent contact with the borehole wall.
-\paragraph{Applications:}
-\begin{itemize}
-	
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=25em]{images/density_tool.jpg}
+	\caption{Schematic of Density Tool}
+\end{figure}
+\paragraph{Applications:}The Spectral Density Tool is applied wherever high-accuracy formation density and Pe measurements are required. It is especially useful in:
+\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Porosity determination
+\item Lithology identification, including detection of thin beds
+\item Operations involving weighted borehole fluids, where stable density readings are necessary
+\item High-temperature, high-pressure wells where rugged design ensures reliability
+\item Combined density-neutron logging for improved reservoir evaluation and gas detection
 \end{itemize}
 
 
@@ -131,7 +152,7 @@ The tool also reduces borehole sensitivity and enhances the accuracy of Pe, maki
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=30em]{images/cast.jpg}
+	\includegraphics[height=25em]{images/cast.jpg}
 	\caption{Circumferential Acoustic Scannig Tools (CAST)}
 \end{figure}
 
